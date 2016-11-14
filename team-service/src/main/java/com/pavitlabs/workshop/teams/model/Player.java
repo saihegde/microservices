@@ -16,11 +16,12 @@ public class Player {
 	private long id;
 	private String name;
 	private String position;
-	@ManyToOne(optional=false)
+	
+	@ManyToOne
 	private Team team;
 	
 	public Player() {
-		// Intentionally blank
+		// Intentionally left blank
 	}
 	
 	public Player(String name, String position) {
